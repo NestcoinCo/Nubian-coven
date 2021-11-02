@@ -21,7 +21,7 @@ contract NbnWizard {
     function decodeEvent(bytes memory response) internal pure returns (string memory _eventCode, bytes memory _eventParams) {
         if (response.length > 0) {
             (_eventCode, _eventParams) = abi.decode(response, (string, bytes));
-        }
+        } 
     }
 
     event LogCast(
